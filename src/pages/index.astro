@@ -9,21 +9,10 @@ const pageTitle = "Home";
 <BaseLayout pageTitle={pageTitle}>
     <div class="h-[100px]"></div>
     <ArticleCardScrollContainer />
-    <!-- <ul class="flex flex-col gap-4 mt-8">
-        {
-            allPosts.map((post) => (
-                <ArticleCard
-                    url={post.url}
-                    name={post.frontmatter.name}
-                    description={post.frontmatter.description}
-                />
-            ))
-        }
-    </ul> -->
     <br />
     <h2>tags:</h2>
     <div class="flex gap-4">
         {tags.map((tag) => <a href={`/tags/${tag}`}>{tag}</a>)}
     </div>
-    <div class="h-[1000px]"></div>
+    <div class="h-[300px]"></div>
 </BaseLayout>
