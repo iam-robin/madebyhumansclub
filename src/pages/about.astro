@@ -2,11 +2,8 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const pageTitle = "About Page";
-const skills = ["JavaScript", "TypeScript", "React", "Astro"];
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-    <ul>
-        {skills.map((skill) => <li>{skill}</li>)}
-    </ul>
+    <h1>About</h1>
 </BaseLayout>
