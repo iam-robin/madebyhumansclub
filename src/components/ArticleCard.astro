@@ -1,0 +1,15 @@
+---
+export interface Props {
+    url: string | undefined;
+    name: string;
+    description: string;
+}
+const { url, name, description } = Astro.props as Props;
+---
+
+<div class="border border-black bg-white sticky top-10 origin-top card">
+    <a class="h-[400px] flex justify-center items-center" href={url}>
+        <p>{name}</p>
+        <p>{description}</p>
+    </a>
+</div>
